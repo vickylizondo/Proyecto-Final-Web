@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Viajes</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Consulta de Viajes</h1>
+    <p>Planifique su recorrido</p>
+</header>
+
+<img
+src="../img/terminal.jpg"
+alt="Consulta de Viajes"
+class="hero">
+
+<main>
+
+<h2>Seleccione un destino</h2>
+
+<select id="destino">
+
+    <option value="">Seleccione</option>
+
+    <option value="Buenos Aires">
+        Buenos Aires
+    </option>
+
+    <option value="Córdoba">
+        Córdoba
+    </option>
+
+    <option value="Salta">
+        Salta
+    </option>
+
+    <option value="Mendoza">
+        Mendoza
+    </option>
+
+</select>
+
+<br><br>
+
+<button class="boton" onclick="consultarViaje()">
+Consultar Viaje
+</button>
+
+<div id="resultado"></div>
+
+<br>
+
+<a class="boton" href="index.html">
+Volver al Inicio
+</a>
+
+</main>
+
+<script>
+
+function consultarViaje() {
+
+    let destino =
+    document.getElementById("destino").value;
+
+    let resultado =
+    document.getElementById("resultado");
+
+    if(destino === "Buenos Aires") {
+
+        resultado.innerHTML = `
+        <h3>Resultado</h3>
+        <p><b>Transporte:</b> Avión</p>
+        <p><b>Salida:</b> Puerta 5</p>
+        <p><b>Tiempo:</b> 2 horas</p>
+        <p><b>Costo:</b> $120.000</p>
+        `;
+    }
+
+    else if(destino === "Córdoba") {
+
+        resultado.innerHTML = `
+        <h3>Resultado</h3>
+        <p><b>Transporte:</b> Ómnibus</p>
+        <p><b>Salida:</b> Andén 8</p>
+        <p><b>Tiempo:</b> 7 horas</p>
+        <p><b>Costo:</b> $35.000</p>
+        `;
+    }
+
+    else if(destino === "Salta") {
+
+        resultado.innerHTML = `
+        <h3>Resultado</h3>
+        <p><b>Transporte:</b> Tren</p>
+        <p><b>Salida:</b> Andén 3</p>
+        <p><b>Tiempo:</b> 5 horas</p>
+        <p><b>Costo:</b> $20.000</p>
+        `;
+    }
+
+    else if(destino === "Mendoza") {
+
+        resultado.innerHTML = `
+        <h3>Resultado</h3>
+        <p><b>Transporte:</b> Avión</p>
+        <p><b>Salida:</b> Puerta 2</p>
+        <p><b>Tiempo:</b> 2 horas 30 min</p>
+        <p><b>Costo:</b> $95.000</p>
+        `;
+    }
+
+    else {
+
+        resultado.innerHTML =
+        "<p><b>Debe seleccionar un destino para realizar la consulta.</b></p>";
+    }
+
+}
+
+</script>
+
+<footer>
+    <p>© 2026 Nexo Consulting - Consulta de Viajes</p>
+</footer>
+
+</body>
+
+</html>

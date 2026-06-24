@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios</title>
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Servicios de la Terminal</h1>
+    <p>Información útil para pasajeros</p>
+</header>
+
+<img
+src="../img/terminal.jpg"
+alt="Servicios de la Terminal"
+class="hero">
+
+<main>
+
+<h2>Servicios Disponibles</h2>
+
+<ul>
+
+<li>
+<b>Baños</b><br>
+Ubicación: Sector A y B<br>
+Horario: 24 horas
+</li>
+
+<br>
+
+<li>
+<b>Oficina de Información</b><br>
+Ubicación: Hall Central<br>
+Horario: 08:00 a 22:00
+</li>
+
+<br>
+
+<li>
+<b>Locales Gastronómicos</b><br>
+Ubicación: Patio de comidas<br>
+Horario: 07:00 a 23:00
+</li>
+
+<br>
+
+<li>
+<b>Área de Espera</b><br>
+Ubicación: Planta Baja<br>
+Horario: 24 horas
+</li>
+
+<br>
+
+<li>
+<b>Estacionamiento</b><br>
+Ubicación: Exterior de la terminal<br>
+Horario: 24 horas
+</li>
+
+</ul>
+
+<h2>Preguntas Frecuentes</h2>
+
+<input type="text" id="pregunta"
+placeholder="Escriba su consulta">
+
+<br><br>
+
+<button class="boton"
+onclick="responder()">
+Consultar
+</button>
+
+<div id="respuesta"></div>
+
+<br>
+
+<a class="boton" href="index.html">
+Volver al Inicio
+</a>
+
+</main>
+
+<script>
+
+function responder() {
+
+let pregunta =
+document.getElementById("pregunta")
+.value.toLowerCase();
+
+let respuesta = "";
+
+if(pregunta.includes("baño")) {
+
+respuesta =
+"Los baños están ubicados en los sectores A y B.";
+
+}
+
+else if(pregunta.includes("gastronom")) {
+
+respuesta =
+"Los locales gastronómicos se encuentran en el patio de comidas.";
+
+}
+
+else if(pregunta.includes("información")) {
+
+respuesta =
+"La oficina de información se encuentra en el Hall Central.";
+
+}
+
+else if(pregunta.includes("espera")) {
+
+respuesta =
+"El área de espera está ubicada en Planta Baja y funciona las 24 horas.";
+
+}
+
+else if(pregunta.includes("estacionamiento")) {
+
+respuesta =
+"El estacionamiento funciona las 24 horas.";
+
+}
+
+else if(pregunta.includes("comida")) {
+
+respuesta =
+"Los locales gastronómicos se encuentran en el patio de comidas.";
+
+}
+
+else {
+
+respuesta =
+"Consulte personalmente en la oficina de información.";
+
+}
+
+document.getElementById("respuesta")
+.innerHTML =
+"<p>" + respuesta + "</p>";
+
+}
+
+</script>
+
+<footer>
+    <p>© 2026 Nexo Consulting - Servicios de la Terminal</p>
+</footer>
+
+</body>
+</html>
