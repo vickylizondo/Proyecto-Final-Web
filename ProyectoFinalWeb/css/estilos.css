@@ -523,3 +523,24 @@ PORTFOLIO
     line-height:1.8;
     text-align:justify;
 }
+/*==========================
+TARJETA DEL PORTFOLIO
+==========================*/
+
+.tarjeta-link{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
+
+.tarjeta-link:hover{
+    color:inherit;
+}
+
+.tarjeta-link h3{
+    color:#003366;
+}
+
+.tarjeta-link:hover h3{
+    color:#2563EB;
+}
