@@ -489,3 +489,35 @@ LOCALES Y SERVICIOS
     padding:20px;
     display:block;
 }
+/*==========================
+PORTFOLIO
+==========================*/
+
+.infografia{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    text-align:center;
+    margin:auto;
+    max-width:1000px;
+}
+
+.infografia img{
+    width:100%;
+    max-width:850px;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+.hero-texto{
+    max-width:1000px;
+    margin:auto;
+}
+
+.hero-texto p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
