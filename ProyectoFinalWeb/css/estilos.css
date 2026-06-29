@@ -424,3 +424,59 @@ LOCALES
 .local p{
     padding:0 20px 20px;
 }
+/*==========================
+LOCALES Y SERVICIOS
+==========================*/
+
+.locales{
+    margin-top:70px;
+}
+
+.locales h2{
+    text-align:center;
+    color:#0F172A;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.texto-locales{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 40px;
+    font-size:18px;
+    color:#555;
+}
+
+.contenedor-locales{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.local{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.local:hover{
+    transform:translateY(-8px);
+}
+
+.local img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.local h3{
+    color:#2563EB;
+    padding:20px 20px 10px;
+}
+
+.local p{
+    padding:0 20px 20px;
+    line-height:1.6;
+}
