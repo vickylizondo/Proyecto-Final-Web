@@ -378,3 +378,49 @@ color:white;
     width:100%;
     border-radius:15px;
 }
+/*==========================
+LOCALES
+==========================*/
+
+.locales{
+    margin:70px auto;
+}
+
+.locales h2{
+    text-align:center;
+    color:#0F172A;
+    margin-bottom:30px;
+}
+
+.contenedor-locales{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.local{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.local:hover{
+    transform:translateY(-8px);
+}
+
+.local img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.local h3{
+    padding:20px 20px 10px;
+    color:#2563EB;
+}
+
+.local p{
+    padding:0 20px 20px;
+}
